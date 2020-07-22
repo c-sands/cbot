@@ -2,7 +2,7 @@
     "name": "cbot",
     "version": "0.0.0",
     "description": "Module for posting updates to various social media",
-    "main": "index.js",
+    "main": "bot.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -15,5 +15,8 @@
     "bugs": {
         "url": "https://github.com/c-sands/cbot/issues"
     },
-    "homepage": "https://github.com/c-sands/cbot#readme"
+    "homepage": "https://github.com/c-sands/cbot#readme",
+    "dependencies": {
+        "twit": "^2.2.11"
+    }
 }
