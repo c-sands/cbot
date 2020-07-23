@@ -11,12 +11,12 @@ module.exports = {
 }
 */
 
-const postUpdate = (config, content) => {
+const postUpdate = (config, series, chapterNum) => {
     const T = new twit(config);
 
-    T.post('statuses/update', { status: content }, (err, data, response) => {
+    T.post('statuses/update', { status: `${series} has updated chapter ${chapterNum}. Check it out on www.centinni.com` }, (err, data, response) => {
         console.log(data);
     });
 }
 
-postUpdate(config, 'hello world');
+postUpdate(config, 'The Tutorial is Too Hard', '285');
